@@ -6,8 +6,12 @@ from service.visualization_service import create_touchbar_labels
 root = Tk()
 PyTouchBar.prepare_tk_windows(root)
 
+# Build Tkinter interface
+lbl = Label(root, text="Hello World")
+lbl.pack()
+
 # Hide the Tkinter window - we only want the TouchBar
-root.withdraw()
+# root.withdraw()
 
 # Optional: Set a minimal window title for the menu bar
 root.title("TouchBar System Monitor")
